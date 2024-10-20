@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Imagen de fondo -->
+
+    <!-- Contenedor principal con elementos centrados -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp"
+        android:background="@color/backgroundColor"
+        tools:ignore="ExtraText">
+
+        <!-- Título en negro -->
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textSize="28sp"
+            android:textColor="@color/primaryTextColor"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+        <!-- Campo de Email con borde gris oscuro y texto negro -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/primaryTextColor"
+        android:backgroundTint="@color/secondaryTextColor"
+        android:layout_marginBottom="16dp"/>
+
+        <!-- Campo de Contraseña con borde gris oscuro y texto negro -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/primaryTextColor"
+        android:backgroundTint="@color/secondaryTextColor"
+        android:layout_marginBottom="24dp"/>
+
+        <!-- Botón de Login con fondo azul profundo y texto blanco -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"/>  <!-- Texto blanco -->
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+

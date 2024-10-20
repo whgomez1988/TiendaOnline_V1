@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Título: Registro -->
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Campo de nombre -->
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Completo"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de correo -->
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de confirmar contraseña -->
+    <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="10dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botón de registro -->
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para ir a inicio de sesión -->
+    <Button
+        android:id="@+id/buttonGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes una cuenta? Inicia sesión"
+        android:background="@android:color/transparent"
+        android:textColor="@color/primaryColor"
+        android:layout_gravity="center" />
+</LinearLayout>
+
+

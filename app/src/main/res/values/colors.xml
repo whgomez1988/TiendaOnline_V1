@@ -1,0 +1,12 @@
+<resources>
+    <!-- Colores base -->
+    <color name="backgroundColor">#F5F5F5</color>  <!-- Gris claro para el fondo -->
+    <color name="primaryTextColor">#000000</color>  <!-- Negro para textos principales -->
+    <color name="secondaryTextColor">#BDBDBD</color>  <!-- Gris oscuro para bordes y detalles -->
+    <color name="buttonColor">#1E3A5F</color>  <!-- Azul profundo para los botones -->
+    <color name="buttonTextColor">#FFFFFF</color>  <!-- Blanco para el texto en botones -->
+
+    <!-- Otros colores que podemos necesitar más adelante -->
+    <color name="errorColor">#D32F2F</color>  <!-- Rojo para mensajes de error -->
+    <color name="accentColor">#FFA000</color>  <!-- Amarillo/naranja para destacar algo -->
+</resources>
