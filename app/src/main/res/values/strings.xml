@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">TiendaOnline</string>
+    <string name="app_name">Tienda Online</string>
+    <string name="default_web_client_id">1046642426542-0d77ikj6rhj2ohgdisgg6uqm2qocl838.apps.googleusercontent.com</string>
 </resources>
