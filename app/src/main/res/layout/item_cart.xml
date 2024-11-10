@@ -13,18 +13,6 @@
         android:orientation="horizontal"
         android:layout_marginBottom="8dp">
 
-        <!-- Cuadro para imagen del producto (a la izquierda) -->
-        <ImageView
-            android:id="@+id/productImage"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="16dp"
-            android:background="@color/backgroundColor"
-            android:clickable="true"
-            android:contentDescription="@string/product_image"
-            android:focusable="true" />
-
         <!-- Contenedor de texto del producto -->
         <LinearLayout
             android:layout_width="0dp"
@@ -62,7 +50,13 @@
                 android:layout_marginTop="8dp"/>
         </LinearLayout>
     </LinearLayout>
+
+    <!-- Botón para eliminar el producto -->
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/errorColor"
+        android:text="Eliminar"
+        android:textColor="@color/buttonTextColor" />
 </LinearLayout>
-
-
-

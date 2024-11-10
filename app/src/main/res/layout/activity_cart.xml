@@ -1,53 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/backgroundColor">
 
-
-    <!-- Nombre del producto -->
-
-    <!-- Precio del producto -->
-
-    <!-- Cantidad seleccionada -->
-
-    <!-- Botón para eliminar el producto -->
-    <TextView
-        android:id="@+id/cartProductName"
-        android:layout_width="0dp"
+    <!-- RecyclerView para mostrar los productos en el carrito -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Nombre del Producto"
-        android:textColor="@color/primaryTextColor"
-        android:textSize="16sp" />
+        android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/cartProductPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="$0.00"
-        android:textColor="@color/primaryTextColor"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/cartProductQuantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="1"
-        android:textColor="@color/primaryTextColor"
-        android:textSize="16sp" />
-
+    <!-- Botón para proceder al pago -->
     <Button
-        android:id="@+id/buttonRemoveFromCart"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnCheckout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/errorColor"
-        android:text="Eliminar"
-        android:textColor="@color/buttonTextColor" />
-
+        android:text="Proceder al Pago"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:layout_marginTop="16dp" />
 </LinearLayout>
+
+
+
+
+
 

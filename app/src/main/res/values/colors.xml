@@ -5,6 +5,9 @@
     <color name="secondaryTextColor">#BDBDBD</color>  <!-- Gris oscuro para bordes y detalles -->
     <color name="buttonColor">#1E3A5F</color>  <!-- Azul profundo para los botones -->
     <color name="buttonTextColor">#FFFFFF</color>  <!-- Blanco para el texto en botones -->
+    <color name="primaryColor">#1E3A5F</color>
+    <color name="itemBackgroundColor">#FFFFFF</color>
+    <color name="gray_light">#686868</color>  <!-- Gris claro para el fondo -->
 
     <!-- Otros colores que podemos necesitar más adelante -->
     <color name="errorColor">#D32F2F</color>  <!-- Rojo para mensajes de error -->

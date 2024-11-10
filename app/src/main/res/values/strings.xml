@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">Tienda Online</string>
     <string name="default_web_client_id">1046642426542-0d77ikj6rhj2ohgdisgg6uqm2qocl838.apps.googleusercontent.com</string>
+    <string name="google_maps_key">AIzaSyD073O-mTYIJKl-0pminSsUh5GQQsfsy1U</string>
+    <string name="product_image">Imagen del producto</string>
+    <string name="product_price">\$%.2f</string>
+    <string name="register_title">Crear Cuenta</string>
+    <string name="name_hint">Nombre Completo</string>
+    <string name="email_hint">Correo Electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="confirm_password_hint">Confirmar Contraseña</string>
+    <string name="register_button">Registrar</string>
+    <string name="google_sign_in_button">Iniciar sesión con Google</string>
+    <string name="back_button">Volver</string>
+    <string name="price_hint">Precio</string>
+    <string name="description_hint">Descripción</string>
+    <string name="add_product_button">Agregar Producto</string>
+    <string name="set_store_location_button">Establecer Ubicación de la Tienda</string>
+    <string name="logout_button">Cerrar Sesión</string>
+    <string name="home_button">Home</string>
+    <string name="cart_button">Carrito</string>
+
 </resources>

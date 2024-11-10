@@ -1,66 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
 
-    <!-- Imagen de fondo -->
+    <!-- Título: Inicio de Sesión -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="24sp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
 
-    <!-- Contenedor principal con elementos centrados -->
-    <LinearLayout
+    <!-- Campo de correo -->
+    <EditText
+        android:id="@+id/inputEmail"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="24dp"
-        android:background="@color/backgroundColor"
-        tools:ignore="ExtraText">
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
 
-        <!-- Título en negro -->
-        <TextView
-            android:id="@+id/loginTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iniciar Sesión"
-            android:textSize="28sp"
-            android:textColor="@color/primaryTextColor"
-        android:gravity="center"
-        android:layout_marginBottom="24dp"/>
+    <!-- Campo de contraseña -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryTextColor"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
 
-        <!-- Campo de Email con borde gris oscuro y texto negro -->
-        <EditText
-            android:id="@+id/emailInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Correo Electrónico"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/primaryTextColor"
-        android:backgroundTint="@color/secondaryTextColor"
-        android:layout_marginBottom="16dp"/>
+    <!-- Botón de inicio de sesión -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
-        <!-- Campo de Contraseña con borde gris oscuro y texto negro -->
-        <EditText
-            android:id="@+id/passwordInput"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:textColor="@color/primaryTextColor"
-        android:backgroundTint="@color/secondaryTextColor"
-        android:layout_marginBottom="24dp"/>
+    <!-- Botón de Google Sign-In -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión con Google"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
-        <!-- Botón de Login con fondo azul profundo y texto blanco -->
-        <Button
-            android:id="@+id/loginButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Iniciar Sesión"
-            android:backgroundTint="@color/buttonColor"
-        android:textColor="@color/buttonTextColor"/>  <!-- Texto blanco -->
-    </LinearLayout>
+    <!-- Botón para ir a RegisterActivity -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
 
-</FrameLayout>
+
+
 
 
 

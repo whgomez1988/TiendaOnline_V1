@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1046642426542",
+    "firebase_url": "https://tiendapp-441101-default-rtdb.firebaseio.com",
+    "project_id": "tiendapp-441101",
+    "storage_bucket": "tiendapp-441101.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046642426542:android:d7a0e6c03d3e699cab233f",
+        "android_client_info": {
+          "package_name": "com.example.tiendaonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046642426542-0995nb8me1lq9o4vfbndo59249fc40o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNZnsFUmQGJ1C3Hb98GTrykm12MDkkfGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046642426542-0995nb8me1lq9o4vfbndo59249fc40o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

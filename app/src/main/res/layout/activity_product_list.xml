@@ -3,30 +3,121 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@color/backgroundColor">
+    android:padding="16dp">
 
-    <!-- Título: Lista de Productos -->
+    <!-- Contenedor para la imagen y los campos de texto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
 
-    <!-- RecyclerView para mostrar la lista de productos -->
-    <TextView
-        android:id="@+id/productListTitle"
+        <!-- Cuadro para imagen del producto -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:background="@color/gray_light"
+            android:clickable="true"
+            android:contentDescription="Imagen del producto"
+            android:focusable="true"
+            android:src="@drawable/ic_camera" />
+
+        <!-- Contenedor de texto del producto -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <!-- Campo de nombre -->
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_hint"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Campo de precio -->
+            <EditText
+                android:id="@+id/editTextPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price_hint"
+                android:inputType="numberDecimal"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Campo de descripción -->
+            <EditText
+                android:id="@+id/editTextDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description_hint"
+                android:padding="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón para agregar un producto -->
+    <Button
+        android:id="@+id/btnAgregarProducto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="16dp"
-        android:text="Lista de Productos"
-        android:textColor="@color/primaryTextColor"
-        android:textSize="24sp" />
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/add_product_button"
+        android:layout_marginBottom="16dp" />
 
+    <!-- RecyclerView para mostrar los productos -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewProducts"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:scrollbars="vertical" />
+        android:layout_height="269dp"
+        android:layout_weight="1" />
 
+    <!-- Aquí va el fragmento del mapa -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+        <!-- Botón para ir al carrito de compras -->
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_button"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/buttonTextColor"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón para ir a la pantalla de inicio de sesión -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="@string/logout_button"
+        android:textColor="@color/buttonTextColor" />
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
