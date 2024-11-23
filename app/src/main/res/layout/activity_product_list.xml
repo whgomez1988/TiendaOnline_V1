@@ -62,15 +62,16 @@
     </LinearLayout>
 
     <!-- Botón para agregar un producto -->
+
+    <!-- RecyclerView para mostrar los productos -->
     <Button
         android:id="@+id/btnAgregarProducto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/buttonColor"
-        android:text="@string/add_product_button"
-        android:layout_marginBottom="16dp" />
+        android:text="@string/add_product_button" />
 
-    <!-- RecyclerView para mostrar los productos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
