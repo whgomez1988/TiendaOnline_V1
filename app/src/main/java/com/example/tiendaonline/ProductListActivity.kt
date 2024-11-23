@@ -96,7 +96,7 @@ class ProductListActivity : AppCompatActivity(), OnMapReadyCallback {
             finish()
         }
 
-         // Botón para ir al carrito de compras
+        // Botón para ir al carrito de compras
         val btnCart: Button = findViewById(R.id.btnCart)
         btnCart.setOnClickListener {
             val intent = Intent(this, CartActivity::class.java)
@@ -242,6 +242,8 @@ class ProductListActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 }
+
+
 
 
 

@@ -77,7 +77,6 @@
         android:layout_height="269dp"
         android:layout_weight="1" />
 
-    <!-- Aquí va el fragmento del mapa -->
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.google.android.gms.maps.SupportMapFragment"

@@ -43,7 +43,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -52,13 +51,19 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.gms:play-services-auth:20.6.0")
-    implementation(platform("com.google.firebase:firebase-bom:33.5.1"))
+
+    // Firebase dependencies
     implementation("com.google.firebase:firebase-analytics")
-    implementation ("com.google.firebase:firebase-firestore-ktx:24.5.0")
-    implementation ("com.google.firebase:firebase-auth-ktx:21.1.0")
-    implementation ("com.google.android.gms:play-services-location:21.0.1")
-    implementation ("androidx.core:core-ktx:1.6.0")
-    implementation ("com.google.android.gms:play-services-maps:18.0.2")
-    implementation ("com.google.firebase:firebase-database-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.5.0")
+    implementation("com.google.firebase:firebase-auth-ktx:21.1.0")
+    implementation("com.google.firebase:firebase-database-ktx")
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+
+    // Google services
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-maps:18.0.2")
+
+   // Otros
+    implementation("androidx.core:core-ktx:1.6.0")
 }
